@@ -1,4 +1,4 @@
-import {View, Text, StatusBar} from 'react-native';
+import {View, Text, StatusBar, Image} from 'react-native';
 import React from 'react';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Icon from 'react-native-vector-icons/AntDesign';
@@ -41,6 +41,16 @@ const Home = () => {
             <Icon name={'message1'} size={30} color={'#737373'} />
           </View>
         </View>
+        {/* <Image
+                  source={require('../../storage/image/cat.jpeg')}
+                  style={{
+                    resizeMode: 'cover',
+                    width: '92%',
+                    height: '92%',
+                    borderRadius: 100,
+                    backgroundColor: 'orange',
+                  }}
+                /> */}
         <ScrollView>
           <Story />
         </ScrollView>

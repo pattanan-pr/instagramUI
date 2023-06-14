@@ -14,6 +14,7 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {fab} from '@fortawesome/free-brands-svg-icons';
 import {fas} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import Status from './src/components/screenComponents/Status';
 
 const App = () => {
   const Stack = createStackNavigator();
@@ -72,6 +73,11 @@ const App = () => {
         <Stack.Screen
           name="bottomTabSearch"
           component={BottomTabScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Status"
+          component={Status}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
