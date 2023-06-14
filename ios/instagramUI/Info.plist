@@ -47,6 +47,7 @@
 	<string></string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>fonts/Fontisto.tff</string>
 		<string>fonts/Entypo.ttf</string>
 		<string>fonts/EvilIcons.ttf</string>
 		<string>fonts/Ionicons.ttf</string>

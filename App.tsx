@@ -10,6 +10,10 @@ import Search from './src/components/screen/Search';
 import Reels from './src/components/screen/Reels';
 import Activity from './src/components/screen/Activity';
 import Profile from './src/components/screen/Profile';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {fab} from '@fortawesome/free-brands-svg-icons';
+import {fas} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 
 const App = () => {
   const Stack = createStackNavigator();
