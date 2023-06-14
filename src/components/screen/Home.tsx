@@ -4,6 +4,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Icon from 'react-native-vector-icons/AntDesign';
 import {ScrollView} from 'react-native-gesture-handler';
 import Story from '../screenComponents/Story';
+import Post from '../screenComponents/Post';
 // import * from 'react-native-vector-icons/Lobster-Regular;
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
             flexDirection: 'row',
             paddingTop: 50,
             paddingLeft: 20,
+            height:100,
           }}>
           <Text
             style={{
@@ -41,18 +43,9 @@ const Home = () => {
             <Icon name={'message1'} size={30} color={'#737373'} />
           </View>
         </View>
-        {/* <Image
-                  source={require('../../storage/image/cat.jpeg')}
-                  style={{
-                    resizeMode: 'cover',
-                    width: '92%',
-                    height: '92%',
-                    borderRadius: 100,
-                    backgroundColor: 'orange',
-                  }}
-                /> */}
         <ScrollView>
           <Story />
+          <Post />
         </ScrollView>
       </View>
     </View>

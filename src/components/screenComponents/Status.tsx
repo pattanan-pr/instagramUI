@@ -5,16 +5,32 @@ import {
   StatusBar,
   Image,
   TouchableOpacity,
-  TextInput,
+  Animated,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/AntDesign';
 import Icons from 'react-native-vector-icons/FontAwesome';
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Inputmessage from './Inputmessage';
 
 const Status = ({route, navigation}) => {
   const {name} = route.params;
   const {image} = route.params;
+
+  useEffect(() => {
+    let timer = setTimeout(() => {
+      navigation.goBack();
+    }, 5000);
+
+    Animated.timing(progress, {
+      toValue: 5,
+      duration: 5000,
+      useNativeDriver: false,
+    }).start();
+    return () => clearTimeout(timer);
+  }, []);
+
+  const [progress, setProgress] = useState(new Animated.Value(0));
+
   return (
     <View
       style={{
