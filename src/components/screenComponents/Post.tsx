@@ -33,8 +33,8 @@ const Post = () => {
     {
       title: 'AWESOME_O',
       postPersonImg: require('../../storage/image/asumo.jpeg'),
-      postImg: require('../../storage/image/koon.jpeg'),
-      description: "Who is the koon?????",
+      postImg: require('../../storage/image/sp.jpeg'),
+      description: "Haa what a mass",
       like: 206,
       isLike: false,
     },

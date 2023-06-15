@@ -1,7 +1,9 @@
 import {TextInput} from 'react-native';
-import React from 'react';
+import React, { useState } from 'react';
 
-const Inputmessage = () => {
+const Inputmessage = (prop) => {
+  const [value, onChangeText] = useState('Useless Multiline Placeholder');
+  console.log(value)
   return (
     <TextInput
       placeholder="send message"
@@ -15,6 +17,7 @@ const Inputmessage = () => {
         borderWidth: 1,
         fontSize: 20,
         color: 'white',
+        value: value,
       }}
     />
   );

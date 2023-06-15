@@ -42,6 +42,16 @@ const Story = () => {
       name: 'so._p',
       image: require('../../storage/image/dog3.jpeg'),
     },
+    {
+      id: 0,
+      name: 'catty_ulp',
+      image: require('../../storage/image/cat.jpeg'),
+    },
+    {
+      id: 0,
+      name: 'Qop-pink',
+      image: require('../../storage/image/pp.jpg'),
+    },
   ];
 
   return (
